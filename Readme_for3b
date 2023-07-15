@@ -1,0 +1,29 @@
+
+
+# Image Analysis with Azure Cognitive Services
+
+This Python script demonstrates how to perform image analysis using Azure Cognitive Services API. The script analyzes an image provided via a URL and retrieves information such as categories, description, and dominant color.
+
+## Prerequisites
+
+- Python 3.x
+- `requests` library
+
+## Setup
+
+1. Obtain an Azure Cognitive Services API endpoint and subscription key for the Vision service.
+2. Replace the `endpoint` and `subscription_key` variables in the script with your own values.
+3. Provide the URL of the image you want to analyze by replacing the `image_url` variable.
+4. Install the `requests` library if you haven't already by running `pip install requests`.
+
+## Usage
+
+1. Run the script using Python.
+2. The script will send a POST request to the Azure Cognitive Services API, providing the image URL and request parameters.
+3. The API will analyze the image and return the results in the response.
+4. If the response status code is 200 (OK), the script will extract and print the following information:
+   - Categories: The categories or objects detected in the image.
+   - Description: A caption or description of the image.
+   - Dominant Color: The dominant color in the image.
+5. If there is an error, the script will print the response status code and reason.
+
